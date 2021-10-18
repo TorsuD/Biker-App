@@ -39,6 +39,7 @@ export default function Login({navigation}){
                 <TouchableOpacity 
                 onPress={()=>{
                         navigation.navigate("Home")
+                        console.log("Yo")
                 }}
                 style={{
                     
@@ -59,7 +60,7 @@ export default function Login({navigation}){
                     <Text style={{marginTop: 10, fontWeight: '500', color:'grey'}}>Not a member? 
                         <Text style={{color:"orange", fontWeight:"bold"}}>Sign Up</Text>
                     </Text>
-                    
+
                     </TouchableOpacity>
     </View>
     );
