@@ -39,7 +39,7 @@ export default function Login({navigation}){
                 <TouchableOpacity 
                 onPress={()=>{
                         navigation.navigate("Home")
-                        console.log("Yo")
+                        
                 }}
                 style={{
                     

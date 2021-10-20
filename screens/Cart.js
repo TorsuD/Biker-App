@@ -41,16 +41,16 @@ export default function Cart({navigation}){
                 borderRadius:10
                 }}
 
-            source={{uri:"https://images.unsplash.com/photo-1505705694340-019e1e335916?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmljeWNsZXMlMjBwbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}}
+            source={{uri:props.image}}
             />
 
             
             <View style={{flexDirection:'column'}}>
 
             
-            <Text style={{marginTop:50, marginLeft:30, fontWeight:'bold', fontSize:20}}>Champagne Poetry</Text>
-            <Text style={{marginTop:10, marginLeft:30}}>Mountain Bike</Text>
-            <Text style={{marginTop:10, marginLeft:30, color:"orange"}}>$<Text style={{color:"black", fontSize:20, fontWeight:'bold'}}>1,700.00</Text></Text>
+            <Text style={{marginTop:50, marginLeft:30, fontWeight:'bold', fontSize:20}}>{props.title}</Text>
+            <Text style={{marginTop:10, marginLeft:30}}>{props.description}</Text>
+        <Text style={{marginTop:10, marginLeft:30, color:"orange"}}>$<Text style={{color:"black", fontSize:20, fontWeight:'bold'}}>{props.price}</Text></Text>
                 
             </View>
 
@@ -102,40 +102,20 @@ export default function Cart({navigation}){
     </View>
 
     <View>
-    <CartItem/>
-    <CartItem/>
-    <CartItem/>
+    <CartItem description="Mountain Bike" price="1,700.00" title="Champagne Poetry" image="https://images.unsplash.com/photo-1624342430388-2f1e77612bba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJpY3ljbGVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"/>
+    <CartItem description="Urban Bike" price="2,000.00" title="For the Fans Zee B." image="https://images.unsplash.com/photo-1583220113679-91e9833f1ff7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGJpY3ljbGVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"/>
+    <CartItem description="Road Bike" price="1,100.00" title="Race My Mind To Pi" image ="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJpY3ljbGVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
 
     </View>
 
-   <View 
-   style={{padding:80,
-   width:370,
-   margin:20,
-   backgroundColor:'rgb(224,224,224)',
-   marginTop:20,
-   borderRadius:30
-   }}
-   >
-   
-    <Text style={{position:'absolute', 
-    marginLeft:40, 
-    marginTop:40,
-    color:'rgb(128,128,128)',
-    fontSize:18
-    }}>Subtotal</Text>
-
-     <Text style={{ position:'absolute',
-    marginLeft:0, 
-    marginBottom:50,
-    color:'rgb(128,128,128)',
-    fontSize:18
-    }}>Subtotal</Text>
-    </View>
+   <View style={{margin:7, borderRadius:30, padding:90, backgroundColor:"rgb(160,160,160)", alignItems:"center",justifyContent:"space-between", flexDirection:"row"}}>
+   <Text style={{justifyContent:"space-between", fontSize:20, color:"grey"}}>Sub-Total </Text>
+   <Text style={{justifyContent:"space-between",  fontSize:25}}>$4800.00</Text>
+   </View>
    
         {/** PROCEED TO CHECKOUT BUTTON */}
         <TouchableOpacity>
-        <View style={{backgroundColor:"rgb(204,102,0)", padding:20, margin:20, borderRadius:15}}>
+        <View style={{backgroundColor:"rgb(204,102,0)", padding:20, margin:5, borderRadius:15}}>
         <Text style={{marginTop:0, fontWeight:'bold', color:"white", textAlign:'center', fontSize:17}}>Proceed to Checkout</Text>
         
         </View>

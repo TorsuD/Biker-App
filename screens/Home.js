@@ -115,7 +115,7 @@ const updateHeart = (id) => {
         {/**the PHOTO */}
         
           <Image
-            style={{ height: 150, width: 100 }}
+            style={{ alignItems:"center", justifyContent:"center", marginTop:10, marginBottom:10, height: 130, maxWidth: 100, borderRadius:20 }}
             source={{uri:props.image}}
             
           />
@@ -233,30 +233,31 @@ const updateHeart = (id) => {
           id={1}
             price="1,500.00"
             title="Banku Lovers"
+            image="https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
           />
           
         
       </View>
 
       <View style={{ flexDirection: "row" }}>
-        <PRODUCT id={2} price="1,200.00" title="Bikers Dream" 
+        <PRODUCT id={2} price="1,200.00" title="Bikers Dream" image="https://images.unsplash.com/photo-1611523349407-dde0aa3ffa19?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmljeWNsZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
         />
-        <PRODUCT id={3} price="1,180.00" title="Afrodite" />
+        <PRODUCT id={3} price="1,180.00" title="Afrodite" image="https://images.unsplash.com/photo-1571333250630-f0230c320b6d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJpY3ljbGVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
       </View>
 
       <View style={{ flexDirection: "row" }}>
-        <PRODUCT id={4} price="1,400.00" title="Champagne Poetry" />
-        <PRODUCT id={5} price="9,180.00" title="Papi's Home" />
+        <PRODUCT id={4} price="1,400.00" title="Champagne Poetry" image="https://images.unsplash.com/photo-1601391721091-4646369e0bb5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJpY3ljbGVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+        <PRODUCT id={5} price="9,180.00" title="Papi's Home" image="https://images.unsplash.com/photo-1558190596-69daf12cf424?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJpY3ljbGVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
       </View>
 
       <View style={{ flexDirection: "row" }}>
-        <PRODUCT id={6} price="2,000.00" title="Girls want girls" />
-        <PRODUCT id={7} price="800.00" title="In the Bible" />
+        <PRODUCT id={6} price="2,000.00" title="Girls want girls" image="https://images.unsplash.com/photo-1624342430388-2f1e77612bba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJpY3ljbGVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+        <PRODUCT id={7} price="800.00" title="In the Bible" image="https://images.unsplash.com/photo-1583220113679-91e9833f1ff7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGJpY3ljbGVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
       </View>
 
       <View style={{ flexDirection: "row" }}>
-        <PRODUCT id={8} price="1,100.00" title="Love All" />
-        <PRODUCT id={9} price="9,180.00" title="Fair Trade" />
+        <PRODUCT id={8} price="1,100.00" title="Love All" image="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJpY3ljbGVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+        <PRODUCT id={9} price="9,180.00" title="Fair Trade" image="https://images.unsplash.com/photo-1616257240427-07e5165722ca?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJpY3ljbGVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
       </View>
       </ScrollView>
     </SafeAreaView>
